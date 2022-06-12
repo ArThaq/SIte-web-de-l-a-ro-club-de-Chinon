@@ -1,0 +1,80 @@
+.container {
+  margin: 10px;
+}
+
+.diapo_box {
+  background-color: rgb(181, 181, 186);
+  border: 2px solid black;
+  height: 100%;
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.diapo_box footer {
+  text-align: center;
+  border: 2px solid black;
+  height: 685px;
+  width: 70%;
+
+  float:right;
+
+  position: absolute;
+  right: 10px;
+  top: 210px;
+}
+
+.colorDiv1, .colorDiv2, .colorDiv3, .colorDiv4, .colorDiv5, .colorDiv6, .colorDiv7, .colorDiv8, .colorDiv9, .colorDiv10, .colorDiv11, .colorDiv12 {
+	width:100%;
+	height:100%;
+  background-color: rgb(181, 181, 186);
+  position: absolute;
+}
+
+#select1:checked ~ footer .colorDiv1 {
+  z-index: 1;
+}
+
+#select2:checked ~ footer .colorDiv2 {
+  z-index: 1;
+}
+
+#select3:checked ~ footer .colorDiv3 {
+  z-index: 1;
+}
+
+#select4:checked ~ footer .colorDiv4 {
+  z-index: 1;
+}
+
+#select5:checked ~ footer .colorDiv5 {
+  z-index: 1;
+}
+
+#select6:checked ~ footer .colorDiv6 {
+  z-index: 1;
+}
+
+#select7:checked ~ footer .colorDiv7 {
+  z-index: 1;
+}
+
+#select8:checked ~ footer .colorDiv8 {
+  z-index: 1;
+}
+
+#select9:checked ~ footer .colorDiv9 {
+  z-index: 1;
+}
+
+#select10:checked ~ footer .colorDiv10 {
+  z-index: 1;
+}
+
+#select11:checked ~ footer .colorDiv11 {
+  z-index: 1;
+}
+
+#select12:checked ~ footer .colorDiv12 {
+  z-index: 1;
+}

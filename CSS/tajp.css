@@ -1,0 +1,324 @@
+/*
+  Ce document à pour but de modifier toutes les pages du site web.
+  Dans l'ordre on peut modifier le contenu des widget (font, color, )
+  puis on peut modifier sa position (padding)
+-/
+
+
+/* ------------------------------------------------------------------------- */
+/*------------------------- Style des sections ------------------------------*/
+/* ------------------------------------------------------------------------- */
+
+/*--Option relative à la taille des sections--*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header { height: 15%}
+nav    { height:  5%}
+.container { height: 72%}
+footer { height: 8%}
+
+
+/*-------------Options relatives au header ----------------------------------*/
+header {
+  margin: 0px 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 100%;
+}
+
+header #widget_meteo {
+  border: 0px solid blue;
+  height: 100%;
+  margin-right: 18%;
+}
+
+/*-------------Options relatives au nav menu --------------------------------*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  border: 0px solid black;
+  text-align: center;
+  margin: auto;
+}
+
+/*-------------Options relatives au footer ----------------------------------*/
+footer {
+  text-align: right;
+}
+footer img {
+  height: 100%;
+  float: left;
+  margin: 0 5px 0 5px;
+}
+
+
+/*-------------Options relatives au conteneur principal ---------------------*/
+.container {
+  padding: 10px;
+}
+
+.diapo_conteneur p {
+  text-align: center;
+  border: 0px solid red;
+  color:white;
+  text-shadow: 0 1px 0 black;
+  margin: 1px;
+}
+
+.diapo_conteneur {
+  float: left;
+  width: 70%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+
+/* Conteneur du diaporama de la page "Tour Aérien des Jeunes Pilotes" */
+.diapo_conteneurtajp {
+  float: left;
+  width: 60%;
+  height: 70%;
+  border: 2px solid black;
+}
+/* Conteneur du diaporama de la page "Tour Aérien des Jeunes Pilotes" (Fin) */
+
+
+.diapo_dynamique {
+  height: 100%;
+  background-color: #EDEDED;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fondu 20s ease-in-out infinite both;
+}
+
+
+/* Diaporama dynamique de la page "Tour Aérien des Jeunes Pilotes" */
+.diapo_dynamiquetajp {
+  height: 100%;
+  background-color: #EDEDED;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fondutajp 20s ease-in-out infinite both;
+}
+/* Diaporama dynamique de la page "Tour Aérien des Jeunes Pilotes" (Fin) */
+
+
+/* Texte titre de la page "Tour Aérien des Jeunes Pilotes" */
+h3{
+  border: 1px solid black;
+  padding: 1%;
+  width: 85%;
+  margin-left: 6%;
+  text-align: center;
+  color: rgb(51, 102, 204);
+  background-color: #393939;
+}
+/* Texte titre de la page "Tour Aérien des Jeunes Pilotes" (Fin) */
+
+
+/* Textes de présentation de la page "Tour Aérien des Jeunes Pilotes" */
+.tajptext1 {
+  height: 20%;
+  width: 35%;
+
+  background-color: white;
+  border-radius: 25px;
+  opacity: 70%;
+  padding: 1%;
+
+  color: blue;
+  font-size: 70%;
+  text-align: center;
+}
+
+.tajptext2 {
+  position: relative;
+  top: -20%;
+  left: 70%;
+
+  height: 40%;
+  width: 28%;
+
+  background-color: white;
+  border-radius: 25px;
+  opacity: 70%;
+  padding: 1%;
+
+  color: blue;
+  font-size: 80%;
+  text-align: center;
+}
+
+.tajptext3 {
+  position: relative;
+  top: -30%;
+  left: 1%;
+
+  height: 20%;
+  width: 30%;
+
+  background-color: white;
+  border-radius: 25px;
+  opacity: 70%;
+  padding: 1%;
+
+  color: blue;
+  font-size: 80%;
+  text-align: center;
+}
+.tajptext4 {
+  position: relative;
+  top: -15%;
+  left: 1%;
+
+  height: 16%;
+  width: 95%;
+
+  background-color: white;
+  border-radius: 25px;
+  opacity: 70%;
+  padding: 1%;
+
+  color: blue;
+  font-size: 80%;
+  text-align: center;
+}
+/* Textes de présentation de la page "Tour Aérien des Jeunes Pilotes" (Fin) */
+
+
+@keyframes fondu {
+  0%{background-image: url("MEDIA/P_garde_1.jpg");}
+  50%{background-image: url("MEDIA/P_garde_2.jpg");}
+  100%{background-image: url("MEDIA/P_garde_3.jpg");}
+}
+
+
+/* Images du diaporama fondu de la page "Tour Aérien des Jeunes Pilotes" */
+@keyframes fondutajp {
+  0%{background-image: url("../MEDIA/tajpimage1.jpg");}
+  33.33%{background-image: url("../MEDIA/tajpimage2.jpg");}
+  66.66%{background-image: url("../MEDIA/tajpimage3.jpg");}
+  100%{background-image: url("../MEDIA/tajpimage4.jpg");}
+}
+/* Images du diaporama fondu de la page "Tour Aérien des Jeunes Pilotes" (Fin) */
+
+
+#fil_actu {
+  border: 2px solid black;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+
+  float:right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#fil_actu .event {
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+
+/* Cadre de la Foire Aux Questions */
+#FAQ {
+  border: 2px solid black;
+  height: 70%;
+  width: 35%;
+  background-color: white;
+
+  float:right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Cadre de la Foire Aux Questions (Fin) */
+
+/* Titre de la Foire Aux Questions */
+#FAQ .tajpFAQ {
+  border: 2px solid black;
+  background-color: #393939;
+
+  color: rgb(51, 102, 204);
+  font-size: 200%;
+  text-align: center;
+
+  margin-top: -3%;
+  width: 100%;
+}
+/* Titre de la Foire Aux Questions (Fin) */
+
+/* Questions de la Foire Aux Questions */
+#FAQ .tajpFAQs {
+  border-top: 1px solid black;
+  font-size: 70%;
+}
+/* Questions de la Foire Aux Questions (Fin) */
+
+
+/* ------------------------------------------------------------------------- */
+/* ----------------------------Style des Pages -------------------------------*/
+/* ------------------------------------------------------------------------- */
+body {
+  font-family: coronet;
+  font-size: 3vh;
+  color: black;
+}
+
+#pageMainTitle {
+  font-family: trebuchet;
+  font-size: 13vh;
+  color: rgb(37, 99, 235);
+  filter: drop-shadow(4px 4px 2px rgb(55, 65, 81));
+}
+
+
+/* Titre de la page "Tour Aérien des Jeunes Pilotes" */
+#pageMainTitle2 {
+  font-family: trebuchet;
+  font-size: 6vh;
+  color: rgb(37, 99, 235);
+  filter: drop-shadow(1px 1px white);
+}
+/* Titre de la page "Tour Aérien des Jeunes Pilotes" (Fin) */
+
+
+#pageTitle {
+  font-family: trebuchet;
+  font-size : 3vh;
+  color: black;
+
+  background-color : rgb(181, 181, 186);
+  padding: 0 0 0 0px;
+}
+
+#barStyle {
+  background-color: rgb(181, 181, 186);
+  /* Variation de couleur ?*/
+}
+
+header, nav, footer, #article, #fil_actu {
+  border: 2px solid black;
+}
+
+.main_box {
+  background-color: rgb(51, 102, 204);
+}

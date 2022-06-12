@@ -1,0 +1,114 @@
+/*
+  Ce document à pour but de modifier toutes les pages du site web.
+  Dans l'ordre on peut modifier le contenu des widget (font, color, )
+  puis on peut modifier sa position (padding)
+-/
+
+
+/* ------------------------------------------------------------------------- */
+/*------------------------- Style des sections ------------------------------*/
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+
+header {
+  border: 1px solid black;
+  display: block;
+  position: center;
+}
+
+header a {
+  color: white;
+  padding:;
+  text-align: center;
+  text-decoration: none;
+}
+
+header img {
+  width: 20%;
+}
+
+/* ------------------------------------------------------------------------- */
+
+article {
+  border: 1px solid black;
+  background-image: url("MEDIA/P_garde_1.jpg");
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: 100%;
+
+  padding: 1px;
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%
+}
+
+/* ------------------------------------------------------------------------- */
+
+nav {
+  border: 2px solid black;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:;
+}
+
+nav li {
+  float: left;
+  padding: 1em
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------- */
+
+footer {
+  border: 1px solid black;
+  background-color: #333;
+  bottom: 0;
+  position: fixed;
+  padding: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ----------------------------Style du texte -------------------------------*/
+/* ------------------------------------------------------------------------- */
+
+
+#pageTitle1 {
+  font-family: cherry swash;
+  color : rgba(37, 99, 235);
+  text-align: center;
+  border: 2px solid white;
+  filter: drop-shadow(20px 20px 2px rgba(55, 65, 81));
+}
+
+#pageTitle {
+  font-family: trebuchet;
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  background-color : rgba(96, 165, 250, 0.5);
+  padding: 0.5em;
+}
+
+#pageText {
+  font-family: coronet;
+  color: black;
+  text-align: center;
+}

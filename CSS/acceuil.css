@@ -1,0 +1,63 @@
+/*
+  Ce document à pour but de modifier toutes les pages du site web.
+  Dans l'ordre on peut modifier le contenu des widget (font, color, )
+  puis on peut modifier sa position (padding)
+-/
+
+/*-------------Options relatives au conteneur principal ---------------------*/
+.container {
+  padding: 10px;
+}
+
+.diapo_conteneur p {
+  text-align: center;
+  border: 0px solid red;
+  color:white;
+  text-shadow: 0 1px 0 black;
+  margin: 1px;
+}
+
+.diapo_conteneur {
+  float: left;
+  width: 70%;
+  border: 2px solid black;
+}
+
+.diapo_dynamique {
+  height: 100%;
+  background-color: #EDEDED;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fondu 20s ease-in-out infinite both;
+}
+
+@keyframes fondu {
+  0%{background-image: url("../MEDIA/ACCEUIL/P_garde_1.jpg");}
+  50%{background-image: url("../MEDIA/ACCEUIL/P_garde_2.jpg");}
+  100%{background-image: url("../MEDIA/ACCEUIL/P_garde_3.jpg");}
+}
+
+#fil_actu {
+  border: 2px solid black;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+
+  float:right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#fil_actu .event {
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+#article, #fil_actu {
+  border: 2px solid black;
+}
